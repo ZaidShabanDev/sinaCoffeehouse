@@ -1,4 +1,6 @@
 ---
+import '../styles/tokens.css';
+import Intro from '../components/intro/Intro.astro';
 ---
 
 <html lang="en" dir="ltr">
@@ -6,8 +8,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SINA Coffee</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
   </head>
-  <body></body>
+  <body>
+    <Intro />
+  </body>
 </html>
 
 <style is:global>
