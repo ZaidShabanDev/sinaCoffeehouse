@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "astro": "^7.4.11"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.21.0"
   }
 }
