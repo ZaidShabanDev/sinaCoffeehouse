@@ -1,4 +1,7 @@
 ---
+import { Font } from 'astro:assets';
+import Hero from '../components/hero/Hero.astro';
+import '../styles/tokens.css';
 ---
 
 <html lang="en" dir="ltr">
@@ -6,15 +9,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SINA Coffee</title>
+    <Font cssVariable="--font-instrument-serif" preload />
+    <Font cssVariable="--font-inter" preload />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <Hero />
+    </main>
+  </body>
 </html>
+
+<script>
+  import '../features/smooth-scroll';
+</script>
 
 <style is:global>
   html,
   body {
     margin: 0;
     min-height: 100%;
-    background: #ffffff;
+    background: var(--color-cream);
+    color: var(--color-espresso);
+    font-family: var(--font-body);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
 </style>

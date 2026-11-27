@@ -1,0 +1,14 @@
+:root {
+  --color-cream: #F0ECE8;
+  --color-rust: #78441F;
+  --color-wood: #A8744A;
+  --color-kraft: #C9A57A;
+  --color-espresso: #1C1A18;
+
+  --space-gap: 6px;
+  --space-inset: 28px;
+  --radius-card: 16px;
+
+  --font-display: var(--font-instrument-serif);
+  --font-body: var(--font-inter);
+}
